@@ -15,6 +15,8 @@
 		93D78B2D1CDE512000F7A9C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93D78B2B1CDE512000F7A9C8 /* LaunchScreen.storyboard */; };
 		93D78B381CDE512000F7A9C8 /* gameOfThronesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D78B371CDE512000F7A9C8 /* gameOfThronesTests.swift */; };
 		93D78B431CDE512000F7A9C8 /* gameOfThronesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D78B421CDE512000F7A9C8 /* gameOfThronesUITests.swift */; };
+		93D78B521CDE51CF00F7A9C8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D78B511CDE51CF00F7A9C8 /* CloudKit.framework */; };
+		93D78B541CDE9D1D00F7A9C8 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D78B531CDE9D1D00F7A9C8 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		93D78B3E1CDE512000F7A9C8 /* gameOfThronesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gameOfThronesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D78B421CDE512000F7A9C8 /* gameOfThronesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameOfThronesUITests.swift; sourceTree = "<group>"; };
 		93D78B441CDE512000F7A9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D78B501CDE51C100F7A9C8 /* gameOfThrones.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = gameOfThrones.entitlements; sourceTree = "<group>"; };
+		93D78B511CDE51CF00F7A9C8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		93D78B531CDE9D1D00F7A9C8 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D78B521CDE51CF00F7A9C8 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +85,7 @@
 		93D78B131CDE512000F7A9C8 = {
 			isa = PBXGroup;
 			children = (
+				93D78B511CDE51CF00F7A9C8 /* CloudKit.framework */,
 				93D78B1E1CDE512000F7A9C8 /* gameOfThrones */,
 				93D78B361CDE512000F7A9C8 /* gameOfThronesTests */,
 				93D78B411CDE512000F7A9C8 /* gameOfThronesUITests */,
@@ -99,6 +106,7 @@
 		93D78B1E1CDE512000F7A9C8 /* gameOfThrones */ = {
 			isa = PBXGroup;
 			children = (
+				93D78B501CDE51C100F7A9C8 /* gameOfThrones.entitlements */,
 				93D78B1F1CDE512000F7A9C8 /* AppDelegate.swift */,
 				93D78B211CDE512000F7A9C8 /* ViewController.swift */,
 				93D78B231CDE512000F7A9C8 /* Main.storyboard */,
@@ -106,6 +114,7 @@
 				93D78B2B1CDE512000F7A9C8 /* LaunchScreen.storyboard */,
 				93D78B2E1CDE512000F7A9C8 /* Info.plist */,
 				93D78B261CDE512000F7A9C8 /* gameOfThrones.xcdatamodeld */,
+				93D78B531CDE9D1D00F7A9C8 /* AddViewController.swift */,
 			);
 			path = gameOfThrones;
 			sourceTree = "<group>";
@@ -196,6 +205,15 @@
 				TargetAttributes = {
 					93D78B1B1CDE512000F7A9C8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 5ZFLG4EDBU;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					93D78B321CDE512000F7A9C8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -261,6 +279,7 @@
 			files = (
 				93D78B281CDE512000F7A9C8 /* gameOfThrones.xcdatamodeld in Sources */,
 				93D78B221CDE512000F7A9C8 /* ViewController.swift in Sources */,
+				93D78B541CDE9D1D00F7A9C8 /* AddViewController.swift in Sources */,
 				93D78B201CDE512000F7A9C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = gameOfThrones/gameOfThrones.entitlements;
 				INFOPLIST_FILE = gameOfThrones/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.bocamuchas.emiliano.gameOfThrones;
@@ -416,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = gameOfThrones/gameOfThrones.entitlements;
 				INFOPLIST_FILE = gameOfThrones/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.bocamuchas.emiliano.gameOfThrones;
