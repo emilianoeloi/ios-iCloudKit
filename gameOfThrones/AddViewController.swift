@@ -91,7 +91,7 @@ class AddViewController: UIViewController,
             }
             
             NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-                    self.waitVew.hidden = true
+                self.waitVew.hidden = true
                 self.navigationController?.setNavigationBarHidden(false, animated: true)
             })
         })

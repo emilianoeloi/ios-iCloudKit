@@ -17,6 +17,7 @@
 		93D78B431CDE512000F7A9C8 /* gameOfThronesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D78B421CDE512000F7A9C8 /* gameOfThronesUITests.swift */; };
 		93D78B521CDE51CF00F7A9C8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D78B511CDE51CF00F7A9C8 /* CloudKit.framework */; };
 		93D78B541CDE9D1D00F7A9C8 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D78B531CDE9D1D00F7A9C8 /* AddViewController.swift */; };
+		93D78B561CDEF9CE00F7A9C8 /* no_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 93D78B551CDEF9CE00F7A9C8 /* no_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		93D78B501CDE51C100F7A9C8 /* gameOfThrones.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = gameOfThrones.entitlements; sourceTree = "<group>"; };
 		93D78B511CDE51CF00F7A9C8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		93D78B531CDE9D1D00F7A9C8 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		93D78B551CDEF9CE00F7A9C8 /* no_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no_image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				93D78B2E1CDE512000F7A9C8 /* Info.plist */,
 				93D78B261CDE512000F7A9C8 /* gameOfThrones.xcdatamodeld */,
 				93D78B531CDE9D1D00F7A9C8 /* AddViewController.swift */,
+				93D78B551CDEF9CE00F7A9C8 /* no_image.png */,
 			);
 			path = gameOfThrones;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				93D78B2D1CDE512000F7A9C8 /* LaunchScreen.storyboard in Resources */,
 				93D78B2A1CDE512000F7A9C8 /* Assets.xcassets in Resources */,
+				93D78B561CDEF9CE00F7A9C8 /* no_image.png in Resources */,
 				93D78B251CDE512000F7A9C8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
