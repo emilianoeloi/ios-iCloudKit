@@ -8,3 +8,7 @@ iOS - iCloudKit
 iCloud for Developers - https://developer.apple.com/icloud/
 
 Working with CloudKit in iOS 8 - http://www.appcoda.com/cloudkit-introduction-tutorial/
+
+iOS Storyboards: Getting Started - https://www.raywenderlich.com/5055364-ios-storyboards-getting-started
+
+Create a Table View - https://developer.apple.com/library/archive/referencelibrary/GettingStarted/DevelopiOSAppsSwift/CreateATableView.html
